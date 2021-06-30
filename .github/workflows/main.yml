@@ -35,6 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your projec.
   test:
+    runs-on: ubuntu-latest
     steps:
     
       - name: Run MVN_TEST
