@@ -4,6 +4,7 @@ package steps;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -50,7 +51,7 @@ public class GoogleSearch  {
 	@And("User hits enter")
 	public void user_hits_enter() {
 		System.out.println("User hits enter");
-		driver.findElement(By.xpath("(//input[@name='btnK'])[2]")).click();
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.ENTER);
 	}
 
 	@Then("User is navigated to search results")
