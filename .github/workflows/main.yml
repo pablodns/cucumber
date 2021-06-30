@@ -36,4 +36,6 @@ jobs:
           echo test, and deploy your projec.
   test:
     steps:
-      run: mvn test
+    
+      - name: Run MVN_TEST
+        run: mvn test
