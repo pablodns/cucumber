@@ -36,4 +36,4 @@ jobs:
           echo test, and deploy your projec.
   test:
     steps:
-      script: "mvn test"
+      run: mvn test
