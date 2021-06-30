@@ -14,7 +14,7 @@ Feature: Google Search
     Examples: 
       | value  |
       | Selenium |
-      | Fail |
+#| Fail |
       
   @TestScenario1
   Scenario Outline: Search ANOTHER THING stuff in google
