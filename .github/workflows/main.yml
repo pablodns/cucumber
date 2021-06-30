@@ -35,4 +35,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your projec.
   test:
-    script: "mvn test"
+    steps:
+      script: "mvn test"
