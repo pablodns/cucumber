@@ -39,4 +39,6 @@ jobs:
     steps:
     
       - name: Run MVN_TEST
-        run: mvn test
+        run: |
+          mvn install
+          mvn test
