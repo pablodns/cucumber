@@ -5,6 +5,9 @@ import io.cucumber.java.After;
 
 public class Hooks {
 
+	public Hooks() {
+		// TODO Auto-generated constructor stub
+	}
 	@Before
 	public void beforeScenario() {
 		//System.out.println("beforeScenario");

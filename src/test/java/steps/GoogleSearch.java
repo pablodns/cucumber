@@ -8,6 +8,9 @@ import io.cucumber.java.en.*;
 
 public class GoogleSearch  {
 
+	public GoogleSearch() {
+		// TODO Auto-generated constructor stub
+	}
 	WebDriver driver = TestBase.getDriver();
 	
 	@Given("User opens browser")

@@ -19,4 +19,7 @@ import io.cucumber.junit.CucumberOptions;
 )
 public class TestRunner {
 
+	public TestRunner() {
+		// TODO Auto-generated constructor stub
+	}
 }
