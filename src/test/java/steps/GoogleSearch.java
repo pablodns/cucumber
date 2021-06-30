@@ -22,8 +22,8 @@ public class GoogleSearch  {
 	
 	@Given("User opens browser")
 	public void user_opens_browser() {
-		System.out.println("From class: User opens browser");
-		System.setProperty("webdriver.chrome.driver", "C:/codebase/drivers/chromedriver.exe");
+		System.out.println(System.getProperty("user.dir") + "From class: User opens browser");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/resources/drivers/chromedriver.exe");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		driver = new ChromeDriver(chromeOptions);
 		driver.manage().window().maximize();
