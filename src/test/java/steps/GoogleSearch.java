@@ -11,11 +11,12 @@ public class GoogleSearch  {
 	public GoogleSearch() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	WebDriver driver = TestBase.getDriver();
 	
 	@Given("User opens browser")
 	public void user_opens_browser() {
-		System.out.println("User opens browser");
+		System.out.println("From class: User opens browser");
 	}
 
 	@And("User is on www.google.com page")
@@ -31,12 +32,6 @@ public class GoogleSearch  {
 		    throw new io.cucumber.java.PendingException();
 		}
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(searchString);
-	}
-
-	@When("User enters ANOTHER THING text in search box2")
-	public void user_enters_ANOTHER_THING_text_in_search_box() {
-		System.out.println("User enters Selenium text in search box");
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("ANOTHER THING");
 	}
 
 	@And("User hits enter")
